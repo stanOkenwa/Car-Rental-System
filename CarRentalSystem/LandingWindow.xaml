@@ -1,0 +1,36 @@
+﻿<Window x:Class="CarRentalSystem.LandingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarRentalSystem"
+        mc:Ignorable="d"
+        Title="LandingWindow" Height="600" Width="1000" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="459*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="18*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="385*"/>
+            <RowDefinition Height="114*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Column="1" Height="146.333" Margin="10,10,10,0" Grid.Row="1" VerticalAlignment="Top" Orientation="Horizontal">
+            <Button x:Name="btnAddCar"  Width="200" Margin="100,0,0,0" Click="btnAddCar_Click" Content="ADD CAR">
+
+            </Button>
+            <Button x:Name="btnRentCar" Content="Rent Car" Width="200" Margin="35,0,0,0" Click="btnRentCar_Click"/>
+            <Button x:Name="btnModifyCar" Content="Modify Car" Width="200" Margin="35,0,0,0" Click="btnModifyCar_Click"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Height="146.333" Margin="10,0,10,30.889" Grid.Row="1" VerticalAlignment="Bottom" Orientation="Horizontal">
+            <Button x:Name="btnDeleteCar" Content="Delete Car" Width="200" Margin="200,0,0,0" Click="btnDeleteCar_Click"/>
+            <Button x:Name="btnSearchCar" Content="Search Car" Width="200" Margin="80,0,0,0"/>
+        </StackPanel>
+        <Button x:Name="btnLogout" Content="LogOut" Grid.Column="1" HorizontalAlignment="Right" Margin="0,25,53,15" Width="100" Height="30" Click="btnLogout_Click"/>
+        <Separator HorizontalAlignment="Left" Height="10" Margin="0,55,0,0" VerticalAlignment="Top" Width="993" Grid.ColumnSpan="4"/>
+
+    </Grid>
+</Window>

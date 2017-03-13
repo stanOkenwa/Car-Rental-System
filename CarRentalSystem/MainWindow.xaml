@@ -1,0 +1,29 @@
+﻿<Window x:Class="CarRentalSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarRentalSystem"
+        mc:Ignorable="d"
+        Title="Login - Car Rental System" Height="500" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="330*"/>
+            <RowDefinition Height="82*"/>
+        </Grid.RowDefinitions>
+        <StackPanel HorizontalAlignment="Left" Height="50" Margin="21,0,0,0" VerticalAlignment="Top" Width="760"/>
+        <StackPanel HorizontalAlignment="Left" Height="328" Margin="13,14,0,0" Grid.Row="1" VerticalAlignment="Top" Width="770" Orientation="Vertical" Grid.RowSpan="2">
+            <TextBlock x:Name="tbLogin" TextWrapping="Wrap" Height="45" FontSize="25" Margin="318,5,298,0" Text="LOGIN"/>
+            <TextBlock x:Name="tbUsername" TextWrapping="Wrap" Text="username" Height="20" Width="350" Margin="236,10,236,0"/>
+            <TextBox x:Name="txtUsername" Height="40" TextWrapping="Wrap" Margin="240,0,0,10" FontSize="20" FontFamily="DengXian" Width="350" HorizontalAlignment="Left" Padding="0,10"/>
+            <TextBlock x:Name="tbPassword" TextWrapping="Wrap" Text="password" Height="20" Width="350" Margin="236,20,236,0"/>
+            <PasswordBox x:Name="txtPassword" Height="40" Width="350" Margin="240,0,0,10" HorizontalAlignment="Left" PasswordChar="*" Padding="0,10"/>
+            <StackPanel Height="80" Margin="236,10,154,0" Orientation="Horizontal">
+                <Button x:Name="btnSignUp" Content="Sign Up" Width="100" Height="40" Margin="55,20,0,20"/>
+                <Button x:Name="btnLogin" Content="LogIn" Width="100" Height="40" Margin="30,20,0,20" Click="btnLogin_Click"/>
+            </StackPanel>
+        </StackPanel>
+        <Separator HorizontalAlignment="Left" Height="100" Margin="0,5,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="792" RenderTransformOrigin="0.545,0.578"/>
+    </Grid>
+</Window>
